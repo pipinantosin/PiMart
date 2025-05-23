@@ -1,0 +1,53 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f6f6f6;
+}
+
+header {
+  background: #612fff;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a, #loginBtn {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+#hero {
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.produk-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 1rem;
+}
