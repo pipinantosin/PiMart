@@ -1,43 +1,46 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PiMart - Marketplace DApp</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PiMart - Toko DApp Pi Network</title>
+
+  <!-- Google Font & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6b429.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Pi SDK -->
+  <script src="https://sdk.minepi.com/pi-sdk.js"></script>
 </head>
 <body>
   <header>
-    <h1>PiMart</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#produk">Produk</a></li>
-        <li><a href="#jual">Jual Barang</a></li>
-        <li><a href="#profil">Profil</a></li>
-        <li><button id="loginBtn">Login Pi</button></li>
-      </ul>
-    </nav>
+    <div class="navbar">
+      <img src="assets/images/logo.png" alt="PiMart Logo" class="logo">
+      <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+        <a href="shop.html"><i class="fas fa-th-list"></i> Produk</a>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i> Troli</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> Tentang</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Kontak</a>
+      </nav>
+      <button id="loginBtn"><i class="fas fa-user-circle"></i> Masuk dengan Pi</button>
+    </div>
   </header>
 
-  <main>
-    <section id="hero">
-      <h2>Marketplace Khusus Pengguna Pi Network</h2>
-      <p>Beli dan jual produk dengan Pi Coin, aman & mudah.</p>
-    </section>
-
-    <section id="produk">
-      <h3>Produk Terbaru</h3>
-      <div class="produk-list">
-        <!-- Produk akan dimuat secara dinamis di sini -->
-      </div>
-    </section>
+  <main class="hero-section">
+    <h1>Selamat Datang di <span class="brand">PiMart</span></h1>
+    <p>Toko digital berbasis Pi Network, belanja langsung dengan Pi!</p>
+    <a href="shop.html" class="cta-btn"><i class="fas fa-store"></i> Lihat Produk</a>
   </main>
 
   <footer>
-    <p>&copy; 2025 PiMart DApp</p>
+    <p>&copy; 2025 PiMart. Terhubung dengan Pi Network.</p>
   </footer>
 
-  <script src="app.js"></script>
+  <!-- JS -->
+  <script src="assets/js/pi-auth.js"></script>
 </body>
 </html>
